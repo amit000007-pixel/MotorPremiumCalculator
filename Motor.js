@@ -1878,10 +1878,11 @@ function totalAmount(){
     if(ELA.value){
       document.getElementById("OD19").style.display='flex';
       OD19P.textContent=((ELA.value*0.04)*(1-Number(odd.value)/100)).toFixed(2);
+		
     }
     if(TrOD.value){
       document.getElementById("OD20").style.display='flex';
-      OD20P.textContent=((TrOD.value*0.0105)*(1-Number(odd.value)/100)).toFixed(2);
+      OD20P.textContent=((TrOD.value*0.0087)*(1-Number(odd.value)/100)).toFixed(2);
     }
     if(imt23.checked){
       OD3P.textContent=((Number(OD1P.textContent)+Number(OD2P.textContent)+Number(OD19P.textContent)+Number(OD20P.textContent))*0.15).toFixed(2);
