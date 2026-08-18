@@ -1949,7 +1949,7 @@ function totalAmount(){
         document.getElementById('OD8').style.display='flex';
 
       }else{
-        OD8P.textContent=750;
+        OD8P.textContent=250;
         document.getElementById('OD8').style.display='flex';
       }
     }
