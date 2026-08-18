@@ -1881,8 +1881,8 @@ function totalAmount(){
 		
     }
     if(TrOD.value){
-      document.getElementById("OD20").style.display='flex';
-      OD20P.textContent=((TrOD.value*0.0087)*(1-Number(odd.value)/100)).toFixed(2);
+      document.getElementById("OD20").style.display = 'flex';
+    OD20P.textContent = (Number(TrOD.value) * 0.0087).toFixed(2);
     }
     if(imt23.checked){
       OD3P.textContent=((Number(OD1P.textContent)+Number(OD2P.textContent)+Number(OD19P.textContent)+Number(OD20P.textContent))*0.15).toFixed(2);
